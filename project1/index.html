@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of Amalendu Bera - Computer Science & Engineering Student, Frontend Developer, and AI Workflow Builder." />
+  <title>Amalendu Bera | Personal Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Amalendu Bera Home">
+        Amalendu<span>.dev</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <span class="theme-icon" id="theme-icon">☀️</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME SECTION -->
+    <section class="section hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge">Available for Internships &amp; Software Roles</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Amalendu Bera</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            I build <span class="typing-text" id="typing-text">Frontend Web Apps</span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            B.Tech Computer Science &amp; Engineering undergraduate at the Institute of Engineering and Management (IEM), Kolkata. Passionate about responsive web interfaces, AI-driven automation workflows, and scalable software systems.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <a href="Amal_new_cv.pdf" download="Amalendu_Bera_Resume.pdf" class="btn btn-outline" id="hero-resume-btn">
+              Download CV ↓
+            </a>
+          </div>
+
+          <div class="social-strip">
+            <a href="https://linkedin.com/in/amalendu-bera" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-pill">
+              LinkedIn ↗
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-pill">
+              GitHub ↗
+            </a>
+            <a href="mailto:amalendubera2005@gmail.com" aria-label="Send Email" class="social-pill">
+              amalendubera2005@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card">
+            <div class="code-window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="window-title">developer_profile.json</span>
+            </div>
+            <pre class="code-block"><code>{
+  "name": "Amalendu Bera",
+  "degree": "B.Tech in CSE (2023–2027)",
+  "institute": "IEM Kolkata",
+  "cgpa": 8.11,
+  "focus": [
+    "Frontend Engineering",
+    "AI Agent Workflows",
+    "Core Computer Science"
+  ],
+  "location": "Kolkata, India"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a Computer Science and Engineering undergraduate at the <strong>Institute of Engineering and Management (IEM), Kolkata</strong> (Class of 2027), focused on crafting clean, interactive web applications and intelligent automation solutions.
+            </p>
+            <p>
+              My hands-on work spans responsive frontend dashboards using REST APIs, AI companion interfaces integrated with Gemini API and n8n workflows, and embedded IoT prototypes using Arduino. Beyond coding, I am the published author of the Kindle e-book <em>"The 7-Day Productivity Reset: Simple Habits to Take Back Control of Your Time"</em>.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-number">8.11</span>
+                <span class="highlight-label">B.Tech CGPA</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">3+</span>
+                <span class="highlight-label">Full Projects Built</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-number">4+</span>
+                <span class="highlight-label">Global Certifications</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards reveal">
+            <div class="info-card">
+              <h3>Frontend Engineering</h3>
+              <p>Building accessible, mobile-first web interfaces with semantic HTML5, modern CSS Grid/Flexbox, and modular JavaScript.</p>
+            </div>
+            <div class="info-card">
+              <h3>AI &amp; Automation</h3>
+              <p>Designing conversational web apps and automated multi-step agent pipelines using LLM APIs and n8n.</p>
+            </div>
+            <div class="info-card">
+              <h3>Core CS &amp; Problem Solving</h3>
+              <p>Strong foundation in Data Structures, Algorithms, Operating Systems, Computer Networks, and Database Management Systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Proficiency</span>
+          <h2 class="section-title">My Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-card reveal">
+            <h3 class="skill-category-title">Frontend &amp; Web Technologies</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5 &amp; Semantic Markup</span><span>95%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS3, Flexbox, Grid &amp; Animations</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript (ES6+, DOM, Fetch API)</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>REST API Integration</span><span>88%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="88%"></div></div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-card reveal">
+            <h3 class="skill-category-title">Programming &amp; Core CS</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>C / C++ &amp; Java</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Data Structures &amp; Algorithms</span><span>82%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>DBMS &amp; SQL</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Computer Networks &amp; Cyber Security</span><span>84%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="84%"></div></div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-card reveal">
+            <h3 class="skill-category-title">Tools, AI &amp; Hardware</h3>
+            <div class="skill-item">
+              <div class="skill-info"><span>Git, GitHub &amp; VS Code</span><span>90%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Gemini API &amp; n8n Automation</span><span>85%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Arduino &amp; Embedded Sensors</span><span>80%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Eclipse IDE &amp; Cisco Packet Tracer</span><span>78%</span></div>
+              <div class="progress-bar"><div class="progress-fill" data-width="78%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <!-- Interactive Filter Buttons -->
+        <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
+          <button class="filter-btn" data-filter="iot">IoT &amp; Hardware</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Aura -->
+          <article class="project-card reveal" data-category="ai web">
+            <div class="project-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+                alt="Aura AI Companion Web Interface preview"
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge">AI &amp; Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aura – AI Companion Web Interface</h3>
+              <p class="project-desc">
+                An interactive conversational web interface integrating custom system instructions and automated n8n backend workflows connected to the Gemini API for context-aware responses.
+              </p>
+              <div class="project-tags">
+                <span>HTML5/CSS3</span>
+                <span>JavaScript</span>
+                <span>Gemini API</span>
+                <span>n8n Workflows</span>
+              </div>
+              <div class="project-links">
+                <!-- <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo ↗</a>
+                <a href="#contact" class="project-link primary-link">Live Demo ↗</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SkyMetrics -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80"
+                alt="SkyMetrics Weather Dashboard preview"
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge">Frontend App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SkyMetrics – Weather Data Dashboard</h3>
+              <p class="project-desc">
+                A responsive meteorological dashboard that fetches real-time weather metrics, humidity, wind speeds, and multi-day forecasts via public REST APIs with dynamic UI states.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS Grid</span>
+                <span>Vanilla JS</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-links">
+                <!-- <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo ↗</a>
+                <a href="#contact" class="project-link primary-link">Live Demo ↗</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: SmartBin -->
+          <article class="project-card reveal" data-category="iot">
+            <div class="project-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                alt="SmartBin Automated IoT Waste System preview"
+                class="project-img"
+                loading="lazy"
+              />
+              <span class="project-badge">IoT Prototype</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">SmartBin – Touchless Waste System</h3>
+              <p class="project-desc">
+                An automated, contactless waste management prototype engineered with Arduino microcontrollers, ultrasonic proximity sensors, and precision servo motor actuation.
+              </p>
+              <div class="project-tags">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>Ultrasonic Sensors</span>
+                <span>Servo Control</span>
+              </div>
+              <div class="project-links">
+               <!-- <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo ↗</a>
+                <a href="#contact" class="project-link primary-link">Documentation ↗</a> -->
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. RESUME SECTION -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic &amp; Professional Journey</span>
+          <h2 class="section-title">Resume &amp; Credentials</h2>
+          <p class="section-subtitle">
+            Download my complete curriculum vitae or explore my education, technical training, and certifications below.
+          </p>
+          <div class="resume-download-banner">
+            <a href="Amal_new_cv.pdf" download="Amalendu_Bera_Resume.pdf" class="btn btn-primary" id="resume-section-btn">
+              📄 Download Full Resume (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="resume-grid">
+          <!-- Education Column -->
+          <div class="timeline-column reveal">
+            <h3 class="column-heading">🎓 Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">2023 – 2027 (Expected)</span>
+                <h4 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h4>
+                <p class="timeline-org">Institute of Engineering and Management (IEM), Kolkata</p>
+                <p class="timeline-detail">Current CGPA: <strong>8.11 / 10</strong></p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">2022</span>
+                <h4 class="timeline-title">Higher Secondary (Class XII – WBCHSE)</h4>
+                <p class="timeline-org">Thakuranichak Union High School</p>
+                <p class="timeline-detail">Score: <strong>86.6%</strong> (Science with Biology)</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">2020</span>
+                <h4 class="timeline-title">Secondary Examination (Class X – WBBSE)</h4>
+                <p class="timeline-org">Dhanyaghori High School</p>
+                <p class="timeline-detail">Score: <strong>80.14%</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience & Certifications Column -->
+          <div class="timeline-column reveal">
+            <h3 class="column-heading">💼 Internships &amp; Certifications</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">Oct 2026 – Nov 2026</span>
+                <h4 class="timeline-title">Frontend Development Intern</h4>
+                <p class="timeline-org">CodSoft</p>
+                <p class="timeline-detail">Developing responsive, accessible web applications using HTML, CSS, and JavaScript.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">2026</span>
+                <h4 class="timeline-title">Wipro Collaborative Automotive Program</h4>
+                <p class="timeline-org">Wipro &amp; IEM Kolkata</p>
+                <p class="timeline-detail">Completed specialized assessments in vehicle software automation technologies.</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">Mar 2026</span>
+                <h4 class="timeline-title">Global Academic Certifications</h4>
+                <p class="timeline-org">University of London &amp; CUHK</p>
+                <p class="timeline-detail">Certified in <strong>Cyber Security Fundamentals</strong> (University of London) and <strong>Information Theory</strong> (The Chinese University of Hong Kong).</p>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-date">Nov 2025</span>
+                <h4 class="timeline-title">5-Day AI Agents Intensive</h4>
+                <p class="timeline-org">Google &amp; Kaggle</p>
+                <p class="timeline-detail">Hands-on training in autonomous AI agent architectures and prompt orchestration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details -->
+          <div class="contact-info reveal">
+            <h3>Have a project or opportunity in mind?</h3>
+            <p>
+              Feel free to reach out for frontend collaborations, software engineering internships, or technical discussions.
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:amalendubera2005@gmail.com">amalendubera2005@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <span class="contact-icon">📱</span>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+919093904665">+91 9093904665</a>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                  <h4>Location</h4>
+                  <p>Gauranganagar, Kolkata – 700162, West Bengal, India</p>
+                </div>
+              </div>
+
+              <div class="contact-card-item">
+                <span class="contact-icon">🔗</span>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a href="https://linkedin.com/in/amalendu-bera" target="_blank" rel="noopener noreferrer">linkedin.com/in/amalendu-bera</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validated Contact Form -->
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+              />
+              <small class="error-msg" id="name-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+              <small class="error-msg" id="email-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Internship Opportunity / Project Collaboration"
+                required
+              />
+              <small class="error-msg" id="subject-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+              <div class="label-row">
+                <label for="message">Message <span class="required">*</span></label>
+                <span class="char-count" id="char-count">0 / 500</span>
+              </div>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                maxlength="500"
+                placeholder="Write your message here (minimum 15 characters)..."
+                required
+              ></textarea>
+              <small class="error-msg" id="message-error" aria-live="polite"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message →
+            </button>
+
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="current-year">2026</span> Amalendu Bera. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
