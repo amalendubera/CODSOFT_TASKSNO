@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Expense Tracker | CodSoft Task 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div>
+        <h1>Expense Tracker</h1>
+        <p>Monitor your income, expenses, and financial insights in real time.</p>
+      </div>
+      <button id="clearAllBtn" class="btn-outline-danger" title="Clear all saved data">
+        Reset Data
+      </button>
+    </header>
+
+    <!-- Summary Cards for Financial Overview -->
+    <section class="summary-grid" aria-label="Financial Overview">
+      <div class="summary-card balance-card">
+        <span class="card-label">Current Balance</span>
+        <h2 id="totalBalance">₹0.00</h2>
+        <small id="balanceStatus">Net available balance</small>
+      </div>
+      <div class="summary-card income-card">
+        <span class="card-label">Total Income</span>
+        <h2 id="totalIncome">+₹0.00</h2>
+        <small id="incomeCount">0 transactions</small>
+      </div>
+      <div class="summary-card expense-card">
+        <span class="card-label">Total Expenses</span>
+        <h2 id="totalExpense">-₹0.00</h2>
+        <small id="expenseCount">0 transactions</small>
+      </div>
+      <div class="summary-card insight-card">
+        <span class="card-label">Financial Insight</span>
+        <h2 id="savingsRate">0% Saved</h2>
+        <small id="topCategoryInsight">Top expense: None</small>
+      </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="main-grid">
+      <!-- Left Column: Add / Edit Transaction & Category Breakdown -->
+      <aside class="left-panel">
+        <div class="panel-card">
+          <h3 id="formTitle">Add New Transaction</h3>
+          <form id="transactionForm">
+            <input type="hidden" id="editId" value="" />
+
+            <div class="form-group">
+              <label for="title">Description</label>
+              <input
+                type="text"
+                id="title"
+                placeholder="e.g., Monthly Salary, Grocery Store"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="amount">Amount (₹)</label>
+                <input
+                  type="number"
+                  id="amount"
+                  placeholder="0.00"
+                  min="0.01"
+                  step="0.01"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type" required>
+                  <option value="expense">Expense</option>
+                  <option value="income">Income</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" required>
+                  <!-- Populated dynamically via JS -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required />
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" id="submitBtn" class="btn-primary">
+                Add Transaction
+              </button>
+              <button type="button" id="cancelEditBtn" class="btn-secondary hidden">
+                Cancel Edit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Expense Breakdown by Category (Financial Insights) -->
+        <div class="panel-card">
+          <h3>Expense Breakdown by Category</h3>
+          <div id="categoryBreakdown" class="breakdown-list">
+            <p class="empty-text">No expenses recorded yet.</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Column: Filters & Transaction History -->
+      <section class="right-panel panel-card">
+        <div class="history-header">
+          <h3>Transaction History</h3>
+          <div class="filter-bar">
+            <select id="filterType" aria-label="Filter by Transaction Type">
+              <option value="all">All Types</option>
+              <option value="expense">Expenses Only</option>
+              <option value="income">Income Only</option>
+            </select>
+
+            <select id="filterCategory" aria-label="Filter by Expense Category">
+              <option value="all">All Categories</option>
+            </select>
+
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search description..."
+              aria-label="Search transactions"
+            />
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="transaction-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="transactionList">
+              <!-- Populated dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+        <p id="emptyHistoryMsg" class="empty-text">
+          No transactions match your current filters.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
